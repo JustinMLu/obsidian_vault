@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README.md"
+              "title": "README"
             }
           }
         ]
@@ -171,7 +171,7 @@
   "active": "9082e59f39bd4e84",
   "lastOpenFiles": [
     "MoveIt2 Docker Setup (Humble, with GPU).md",
-    "README.md.md",
+    "README.md",
     "create a link.md",
     "Welcome.md"
   ]
