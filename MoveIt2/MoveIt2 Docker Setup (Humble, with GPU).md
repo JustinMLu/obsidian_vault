@@ -1,6 +1,3 @@
-
-# Setting Up Moveit2 with Docker
-
 ### 1. Enable non-sudo Docker
 
 ```bash 
