@@ -1,5 +1,5 @@
 
-# ==Setting Up Moveit2 with Docker==
+# Setting Up Moveit2 with Docker
 
 ### 1. Enable non-sudo Docker
 
@@ -65,7 +65,7 @@ ros2 launch moveit2_tutorials demo.launch.py
 - RViz will open up with the Panda arm. Don't bother trying to change it to the Kinova arm in this docker container - it's a massive pain in the ass.
 
 
-# ==Useful tips==
+# Useful tips
 
 ### 1. Re-enter the container (while it's still running) from another terminal:
 
@@ -76,7 +76,7 @@ docker exec -it moveit2_gpu bash
 ### 2. Rebuild after editing source:
 
 ```bash
-cd ~/ws_moveit # or wherever your workspace is
+cd /ws_moveit # or wherever your workspace is
 colcon build --mixin release
 source install/setup.bash # re-source rebuilt overlay (ws_moveit)
 ```
