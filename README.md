@@ -1,4 +1,4 @@
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=55&pause=1000&color=9270DB&center=true&width=750&height=100&lines=Justin's+Obsidian+Vault)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=55&pause=1000&color=9270DB&center=true&width=800&height=100&lines=Justin's+Obsidian+Vault!)](https://git.io/typing-svg)
 <p align="center">
   <img
     src="https://github.com/user-attachments/assets/7da18d63-7326-4b5c-bb21-47d01217a563"
