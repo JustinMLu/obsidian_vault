@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "MoveIt2/2. First C++ MoveIt Project (Dockerized).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "2. First C++ MoveIt Project (Dockerized)"
             }
           }
         ]
@@ -170,19 +170,21 @@
   },
   "active": "f2e9863b3e952179",
   "lastOpenFiles": [
+    "MoveIt2/1. MoveIt2 Docker Setup (Humble, with GPU).md",
+    "MoveIt2/2. First C++ MoveIt Project (Dockerized).md",
     "MoveIt2/3. Visualizing in RViz.md",
-    "MoveIt2/2. Your First C++ MoveIt Project (Dockerized).md",
+    "Lil'Log for Dummies/Meta Reinforcement Learning.md",
+    "Lil'Log for Dummies",
+    "README.md",
     "MoveIt2/images/tutorial_2_before.png",
     "MoveIt2/images/tutorial_2_after.png",
     "MoveIt2/images/tutorial_3_execution_complete.png",
     "().md",
-    "MoveIt2/1. MoveIt2 Docker Setup (Humble, with GPU).md",
     "MoveIt2/images",
     "Pasted image 20250522162826.png",
     "Pasted image 20250522162816.png",
     "Pasted image 20250522162709.png",
     "MoveIt2",
-    "README.md",
     "create a link.md",
     "Welcome.md"
   ]
