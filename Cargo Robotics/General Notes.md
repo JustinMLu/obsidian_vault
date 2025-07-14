@@ -102,8 +102,8 @@ tensorboard --logdir=tensorboard/
 ```shell
 # Make sure you're in YOLOX directory
 python tools/export_onnx.py \
-	-f exps/example/custom/<YOUR_EXPERIMENT>.py \
-	-c /path/to/your/best_ckpt.pth \
+	-f exps/example/custom/cargo_yolox_s.py \
+	-c YOLOX_outputs/cargo_yolox_s/best_ckpt.pth \
 	--output-name <INSERT_NAME>.onnx
 
 # You can also verify using:

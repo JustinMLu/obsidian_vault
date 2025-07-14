@@ -83,12 +83,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DATSET LABEL RECOVERY.md",
+                "file": "Cargo Robotics/TODO List (Computer Vision).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "DATSET LABEL RECOVERY"
+              "title": "TODO List (Computer Vision)"
             }
           }
         ],
@@ -241,11 +241,14 @@
   },
   "active": "b9572c2b2cfe1bfc",
   "lastOpenFiles": [
-    "Cargo Robotics/Misc. Notes.md",
-    "Cargo Robotics/Isaac Sim on UMich ARC.md",
-    "Dataset Labelling (raw).md",
-    "Validation Labelling.md",
+    "Cargo Robotics/Jetson Notes.md",
+    "Cargo Robotics/TODO List (Computer Vision).md",
+    "Cargo Robotics/General Notes.md",
+    "Isaac Sim/Isaac Sim on UMich ARC.md",
     "README.md",
+    "Isaac Sim",
+    "Validation Labelling.md",
+    "Dataset Labelling (raw).md",
     "DATSET LABEL RECOVERY.md",
     "Lil'Log for Dummies/Meta Reinforcement Learning.md",
     "MoveIt2/1. MoveIt2 Docker Setup (Humble, with GPU).md",

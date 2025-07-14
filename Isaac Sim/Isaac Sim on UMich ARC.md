@@ -12,6 +12,12 @@ srun --jobid=JOBID_NUMBER --pty bash
 
 #4. Test to ensure you're in the GPU node
 nvidia-smi
+
+# Run nvidia-smi repeatedly
+nvidia-smi -l 1
+
+# Run without keeping past calls
+watch -n0.1 nvidia-smi
 ```
 
 ## (UM-ARC) Isaac Sim Installation
