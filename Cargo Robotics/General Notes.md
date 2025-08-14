@@ -1,5 +1,11 @@
 
-# RViz and ROS!
+# Link to WiFi Connection Settings
+
+```bash
+http://192.168.1.254/cgi-bin/home.ha
+```
+
+# RViz and ROS
 
 #### How to reset all packages
 ```bash
@@ -32,7 +38,7 @@ bash vehicle/backend/stow.sh 10 0 10 10 10
 ```
 
 
-# Vision!
+# Computer Vision
 
 #### How to access GPU Node (again)
 ```shell
@@ -47,6 +53,7 @@ srun --jobid=JOBID_NUMBER --pty bash
 
 #4. Test to ensure you're in the GPU node
 nvidia-smi
+watch -n0.1 nvidia-smi # To refresh it
 ```
 
 #### Start training and demo
@@ -102,7 +109,7 @@ tensorboard --logdir=tensorboard/
 ```shell
 # Make sure you're in YOLOX directory
 python tools/export_onnx.py \
-	-f exps/example/custom/cargo_yolox_s.py \
+	-f exps/cargo_yolox_s.py \
 	-c YOLOX_outputs/cargo_yolox_s/best_ckpt.pth \
 	--output-name <INSERT_NAME>.onnx
 
@@ -118,4 +125,21 @@ python -m onnxruntime.tools.check_model cargo_detector.onnx
 ```shell
 # ssh into the jetson nano
 ssh orin@orin-van1.local # Password: 123456
+```
+
+```bash
+
+python tools/export_onnx.py -f exps/example/custom/cargo_yolox_s_100.py -c YOLOX_outputs/cargo_yolox_s_100/latest_ckpt.pth --output-name yolox_100_latest.onnx
+
+python tools/export_onnx.py -f exps/example/custom/cargo_yolox_s_200.py -c YOLOX_outputs/cargo_yolox_s_200/latest_ckpt.pth --output-name yolox_200_latest.onnx
+
+python tools/export_onnx.py -f exps/example/custom/cargo_yolox_s_frozen_backbone_50.py -c YOLOX_outputs/cargo_yolox_s_frozen_backbone_50/latest_ckpt.pth --output-name frozen_backbone_50_latest.onnx
+
+python tools/export_onnx.py -f exps/example/custom/cargo_yolox_s_frozen_backbone_100.py -c YOLOX_outputs/cargo_yolox_s_frozen_backbone_100/latest_ckpt.pth --output-name frozen_backbone_100_latest.onnx
+
+python tools/export_onnx.py -f exps/example/custom/cargo_yolox_s_frozen_backbone_150.py -c YOLOX_outputs/cargo_yolox_s_frozen_backbone_150/latest_ckpt.pth --output-name frozen_backbone_150_latest.onnx
+
+python tools/export_onnx.py -f exps/example/custom/cargo_yolox_s_frozen_backbone_200.py -c YOLOX_outputs/cargo_yolox_s_frozen_backbone_200/latest_ckpt.pth --output-name frozen_backbone_200_latest.onnx
+
+python tools/export_onnx.py -f exps/example/custom/cargo_yolox_s_frozen_backbone_250.py -c YOLOX_outputs/cargo_yolox_s_frozen_backbone_250/latest_ckpt.pth --output-name frozen_backbone_250_latest.onnx
 ```

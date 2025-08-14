@@ -62,3 +62,22 @@ module load gcc/<SELECTED_VERSION>
 # Verify it worked 
 gcc --version
 ```
+
+# How to use multiple terminals on UMich ARC
+
+## 1. Grab allocation once
+```bash
+ssh lujust@gl-login1.arc-ts.umich.edu
+salloc -p gpu --gres=gpu:a40:1 --ntasks=1 --cpus-per-task=4 --time=04:00:00
+```
+This will land on a compute node with `$SLURM_JOB_ID` set. Source your virtual environment on this terminal.
+
+## 2. Fire up as many new terminals as needed
+In each new terminal, run this:
+```bash
+ssh lujust@gl-login1.arc-ts.umich.edu
+srun --jobid=$SLURM_JOB_ID --pty bash -l
+conda activate yolox     # if it didn’t auto‑activate
+nvidia-smi               # boom—same A40
+```
+You can repeat the `srun --jobid=...` in as many SSH terminals as needed!
