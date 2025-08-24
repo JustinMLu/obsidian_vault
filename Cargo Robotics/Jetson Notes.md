@@ -1,11 +1,14 @@
-#### Holy fuckaroni section
+####  USB Camera Formant Section
 
 ```bash
 # List USB cameras
 ls -l /dev/v4l/by-id
 
 # Test usb script thingy
-python3 scripts/test_usb_camera.py --mode web --camera 1 --port 5001
+python3 scripts/test_usb_camera.py --mode web --port 5000 --device /dev/v4l/by-id/<insert camera id here>
+
+# for example
+python3 scripts/test_usb_camera.py --mode web --port 5000 --device /dev/v4l/by-id/usb-4K_USB_CAMERA_HD_USB_CAMERA_01.00.00-video-index0
 ```
 
 #### SSH into Jetsons:
