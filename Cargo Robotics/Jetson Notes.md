@@ -1,7 +1,7 @@
 ####  USB Camera Formant Section
 
 ```bash
-# List USB cameras
+# List USB cameras (not using devices)
 ls -l /dev/v4l/by-id
 
 # Test usb script thingy
