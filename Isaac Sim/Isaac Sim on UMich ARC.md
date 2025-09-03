@@ -20,7 +20,7 @@ nvidia-smi -l 1
 watch -n0.1 nvidia-smi
 ```
 
-## (UM-ARC) Isaac Sim Installation
+## (UM-ARC) Isaac Gym Installation
 
 ```bash
 # Create and activate venv
@@ -63,7 +63,7 @@ module load gcc/<SELECTED_VERSION>
 gcc --version
 ```
 
-# How to use multiple terminals on UMich ARC
+# Using Multiple Terminals (UM ARC)
 
 ## 1. Grab allocation once
 ```bash

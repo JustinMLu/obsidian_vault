@@ -1,4 +1,14 @@
-####  USB Camera Formant Section
+## `nvidia-smi`
+
+```bash
+# Refreshable nvidia-smi window
+watch -n0.1 nvidia-smi 
+
+# Inspect GPU power limits
+nvidia-smi -q -d POWER 
+```
+
+## USB Camera Formant Section
 
 ```bash
 # List USB cameras (not using devices)
@@ -20,7 +30,7 @@ ssh agx2@192.168.1.207 # Jetson AGX (agx2@agx2-desktop)
 
 - Password is ```123456```
 
-#### Specs:
+## Jetson Specs:
 
 **Orin Nano (Docker)** 
 - Python: ```3.10``` (NOT 100% SURE)
@@ -72,6 +82,7 @@ docker search dustynv/l4t-pytorch
 
 ## Jetson Inference Times (100 trials)
 
+### Per-Device Statistics
 #### Jetson Nano
 - Segmentation (CPU):
 	- Average: 0.5390
@@ -103,13 +114,13 @@ docker search dustynv/l4t-pytorch
 	- Total: 2.1787
 
 
-## Overall statistics
+### Overall statistics
 
 #### Jetson Orin Nano
-- Segmentation speed-up: **7.96x**
+- Segmentation speed-up: **7.96x** speedup
 - YOLOX speed-up: **N/A**
 
 #### Jetson Orin AGX
-- Segmentation speed-up: **6.28x**
+- Segmentation speed-up: **6.28x** speedup
 - YOLOX speed-up: **44.7x**
-- YOLOX speed-up (FP16): **46.2x**
+- YOLOX speed-up (FP16): **46.2x** speedup
